@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Contact Book</title>
+  <link rel="stylesheet" href="/asset/css/style.css" />
+  <script src="/asset/js/database.js" defer></script>
+  <script src="/asset/js/event-handler.js" defer></script>
+  <script src="/asset/js/index.js" defer></script>
+</head>
+
+<body>
+
+
+  <!-- HTML components -->
+  <div id="root">
+    <section class="main-wrapper flex colum">
+
+      <!-- logo section -->
+      <div class="logo">
+        <h1> Contact Book</h1>
+      </div>
+
+      <!-- add contact form -->
+      <section class="flex-parent">
+        <div class="flex-children newContactForm ">
+          <div class="inputs">
+            <div>
+              Name
+              <input type="text" class="newContactName" value="test">
+            </div>
+            <div class="newContactPhoneList w-100">
+              <ul>
+                <div class="flex-row">
+                  0728363922
+                  <button class="deleteListItem" data-type="phone" data-key=" 1">x</button>
+                </div>
+              </ul>
+            </div>
+            <div class="newEmailList w-100">
+              <ul>
+                <li>
+                  <div class="flex-row">
+                    yasham@firebird.se
+                    <button class="deleteListItem" data-type="email" data-key="0">x</button>
+                  </div>
+                </li>
+                <li>
+                  <div class="flex-row">
+                    siko@firebird.se
+                  </div>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div class="buttons">
+            <button class="newContactCancel">Cancel</button>
+            <button class="newContactAddPhone">add phone</button>
+            <button class="newContactAddEmail">add email</button>
+            <button class="newContactSave">save</button>
+          </div>
+        </div>
+      </section>
+      <!-- end of add new contact section -->
+
+      <!-- display all contacts card section -->
+      <section class="contacts flex-parent">
+        <div class="flex-children">
+          contact
+        </div>
+      </section>
+      <!-- end of display all the contacts section -->
+  </div>
+</body>
+
+</html>

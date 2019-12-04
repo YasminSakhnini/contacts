@@ -1,0 +1,71 @@
+
+#root {
+  background: rgb(48, 45, 45);
+  color: white;
+}
+
+.flex {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+/* add button */
+
+.addButton {
+  padding: 20px;
+  background-color: orange;
+  /* remove the blue outline that the browser puts on buttons */
+  outline: none;
+}
+
+/* end of add button */
+
+/* add new contact */
+
+.flex-parent {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.flex-children {
+  flex-basis: 250px;
+  height: 250px;
+  padding: 20px;
+  background: gray;
+  margin: 2px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.inputs {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+  height: 300px;
+}
+.flex-row{
+  display: flex;
+  justify-content: space-between;
+  padding-right: 10px;
+  padding-left: 10px;
+}
+.button{
+  display: flex;
+  justify-content: space-around;
+  padding-bottom: 20px;
+}
+/* end of new contact */
+ul{
+  list-style-type: none;
+}
+/* general helper css  */
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.w-100{
+  width: 100%;
+}
