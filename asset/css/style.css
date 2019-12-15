@@ -78,6 +78,21 @@ button {
   outline: none;
 }
 
+.restoreHistoryBtn>* {
+  pointer-events: none;
+  width: 200px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.historyBtnWrapper{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  padding: 20px;
+}
 /* end of new contact */
 
 ul {
