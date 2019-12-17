@@ -110,9 +110,9 @@ class newContactForm {
   constructor(htmlSelector) {
     this.rootelement = htmlSelector
     this.state = {
-      name: 'Yasmine',
-      phone: ["0765-848484"],
-      email: ["hamidjade@gmail.com"]
+      name: '',
+      phone: [],
+      email: []
     }
 
     this.render()
